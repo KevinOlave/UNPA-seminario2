@@ -1,13 +1,45 @@
-@import 'Cabezera'
-@import 'IconoPrncipal'
-@import 'titulo'
-@import 'parrafos'
-@import 'botones'
-@import 'imagenes'
-@import 'carousel'
-
+@import 'Todos'
+@import 'Botones'
+@import 'Parrafos'
+@import 'CabezerayPie'
+@import 'Imagenes'
+    
 body
-    background: white
+    background-color: beach
+    position: relative
+    right: 368px
+    max-width: 37.5rem
+    margin: 0 auto
+    padding: 0 1.25rem
+    font-family: 'Lato', sans-serif
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb")
+    height: 100px
 
-nav
-    background: red
+
+
+@keyframes display 
+   0% 
+     transform: translateX(200px)
+     opacity: 0
+   
+   10% 
+     transform: translateX(0)
+     opacity: 1
+   
+   20% 
+     transform: translateX(0)
+     opacity: 1
+   
+   30% 
+     transform: translateX(-200px)
+     opacity: 0
+   
+   100% 
+     transform: translateX(-200px)
+     opacity: 0
+   
+ 
+   
+
+  
+ 

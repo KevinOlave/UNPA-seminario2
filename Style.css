@@ -1,26 +1,31 @@
-.Cabezera {
-  padding: 24px;
-  width: 1308px;
-  margin: 0px auto;
-  border: 1px;
-  border-style: solid;
-  background: rgb(143, 170, 220);
-  border-radius: 1px;
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  scrollbar-color: rgb(125, 25, 236);
+  scrollbar-width: 0px;
 }
 
-#IconoPrincipal img {
-  max-width: 900%;
-  max-height: 900%;
-  border-radius: 1px;
+#Boton_contacto button {
+  font-size: 20px;
+  background: #3b2cc2;
+  border-radius: 7px;
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  border-radius: 28px;
+  text-shadow: 3px 2px 1px #9daef5;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 15px;
+  padding: 15px;
+  text-decoration: none;
   position: relative;
-  bottom: 26px;
-  right: 30px;
+  bottom: 680px;
 }
 
-#IconoPrincipal {
-  height: 11px;
-  width: 10.3px;
+#Boton_contacto:hover {
+  filter: saturate(300%);
 }
 
 #Titulo {
@@ -33,11 +38,6 @@
 
 #parrafo1 {
   font-size: 26px;
-}
-
-body {
-  position: relative;
-  right: 368px;
 }
 
 #cuerpo {
@@ -91,25 +91,44 @@ body {
   left: 650px;
 }
 
-#Boton_contacto button {
-  font-size: 20px;
-  background: #3b2cc2;
-  border-radius: 7px;
-  background-image: linear-gradient to bottom, #eb94d0, #2079b0;
-  border-radius: 28px;
-  text-shadow: 3px 2px 1px #9daef5;
-  box-shadow: 6px 5px 24px #666666;
-  font-family: Arial;
-  color: #fafafa;
-  font-size: 15px;
-  padding: 15px;
-  text-decoration: none;
-  position: relative;
-  bottom: 680px;
+.Cabezera {
+  padding: 24px;
+  width: 1308px;
+  margin: 0px auto;
+  border: 1px;
+  border-style: solid;
+  background: rgb(143, 170, 220);
+  border-radius: 1px;
+  text-align: center;
 }
 
-#Boton_contacto:hover {
-  filter: saturate 300%;
+.Inferior {
+  padding: 30px;
+  width: 1308px;
+  height: 140px;
+  margin: 200px auto;
+  border: 1px;
+  border-style: solid;
+  background: rgb(143, 170, 220);
+  border-radius: 1px;
+  text-align: center;
+  grid-area: header;
+  position: relative;
+  top: 1600px;
+}
+
+#IconoPrincipal img {
+  max-width: 900%;
+  max-height: 900%;
+  border-radius: 1px;
+  position: relative;
+  bottom: 26px;
+  right: 30px;
+}
+
+#IconoPrincipal {
+  height: 11px;
+  width: 10.3px;
 }
 
 #Fotos {
@@ -127,7 +146,7 @@ body {
 }
 
 #Fotos:hover {
-  filter: saturate 280%;
+  filter: saturate(280%);
 }
 
 #ImagenCosmos img {
@@ -142,7 +161,66 @@ body {
 }
 
 #ImagenCosmos:hover {
-  filter: sepia 80%;
+  filter: sepia(80%);
+}
+
+.pic-ctn {
+  position: relative;
+  left: 320px;
+  width: 50vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  -webkit-animation: display 10s infinite;
+          animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+img:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+img:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+img:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+#Contactar img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  opacity: 5s;
+}
+
+#Contactar {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 570px;
+}
+
+.container {
+  position: relative;
+  top: 1180px;
+  left: 340px;
+  text-align: center;
+  color: #fefefe;
 }
 
 *::-webkit-scrollbar {
@@ -156,10 +234,148 @@ body {
   perspective: 1000px;
 }
 
-body {
-  background: white;
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-animation: rotate360 60s infinite forwards linear;
+          animation: rotate360 60s infinite forwards linear;
 }
 
-nav {
-  background: red;
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://cf.bstatic.com/xdata/images/hotel/270x200/57014281.jpg?k=838ea852f48ad7021625638000ffdda300f81283b4dd0ae3fac6aac67d6e01a4&o=");
+  transform: rotateY(0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+  background-image: url("https://i0.wp.com/elturismoencolombia.com/wp-content/uploads/2016/09/hotel_tequendama_inn_estacion_buenaventura_colombia.jpg?fit=900%2C636&ssl=1");
+  transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0RSnwXoVQJ4Lxh2tr11Zbn3lgN-qhJJ7eQ&usqp=CAU");
+  transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+  background-image: url("https://www.directorioamarillascolombia.com/img/img_empresas/12305.jpeg");
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+  background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/92/39/b9/buenaventura-grand-hotel.jpg?w=700&h=-1&s=1");
+  transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+  background-image: url("https://www.es.kayak.com/rimg/kimg/b3/6e/216dcdaf-5ad9af9b-0.jpg?width=1366&height=768&crop=true");
+  transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1a/1c/57/e7/frente-del-hotel.jpg");
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+  background-image: url("https://q-xx.bstatic.com/xdata/images/hotel/max500/320191624.jpg?k=aeb17132c0de19f8d91c09695e3ae67c9c9c6b85cfb13f9133165c7349fe7ab0&s=100x100");
+  transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTaf5Bx_N40NUNWvZFPXtHbPD_YKAwJjX9S3Sw2Fykr76sPeIOKMAlQeTQllVp6udWqZg&usqp=CAU");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@-webkit-keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+body {
+  background-color: beach;
+  position: relative;
+  right: 368px;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  font-family: "Lato", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+  height: 100px;
+}
+
+@-webkit-keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=Style.css.map */

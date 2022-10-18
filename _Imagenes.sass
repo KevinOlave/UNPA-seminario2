@@ -1,0 +1,190 @@
+#IconoPrincipal img
+
+      max-width: 900%
+      max-height: 900%
+      border-radius: 1px
+      position: relative
+      bottom: 26px
+      right: 30px
+      
+    
+
+
+#IconoPrincipal 
+
+      height: 11px
+      width:  10.3px
+
+    
+
+#Fotos
+
+   position: relative
+   left: 250px
+   bottom: 310px
+   
+   
+
+#Fotos img
+
+   max-width: 900%
+   max-height: 900%
+  
+   height: 300px
+   width:  300px
+   border-radius: 8px
+ 
+
+#Fotos:hover
+  filter: saturate(280%)
+    
+   
+#ImagenCosmos img
+
+   max-width: 100%
+   max-height: 100%
+  
+   height: 300px
+   width:  500px
+   
+   position: relative
+   left: 700px
+   bottom: 325px
+   border-radius: 8px 
+   
+
+#ImagenCosmos:hover 
+    
+   filter: sepia(80%)
+    
+   
+.pic-ctn 
+   position: relative
+   left: 320px
+   width: 50vw
+   height: 300px
+   margin-top: 15vh
+ 
+ 
+.pic-ctn > img 
+   position: absolute
+   top: 0
+   left: calc(50% - 100px)
+   opacity: 0
+   animation: display 10s infinite
+ 
+ 
+img:nth-child(2) 
+   animation-delay: 2s
+ 
+img:nth-child(3) 
+   animation-delay: 4s
+ 
+img:nth-child(4) 
+   animation-delay: 6s
+ 
+img:nth-child(5) 
+   animation-delay: 8s
+
+#Contactar img
+   max-width: 100%
+   max-height: 100%
+   border-radius: 3px
+   opacity: 5s
+ 
+
+#Contactar 
+
+   height:100px
+   width:100px
+   position: relative
+   left: 570px
+
+ 
+.container
+
+   position: relative
+   top: 1180px
+   left:340px
+   text-align: center
+   color: #fefefe
+   
+
+
+*::-webkit-scrollbar 
+   width: 18px
+ 
+
+
+.container 
+   position: relative
+   width: 320px
+   margin: 100px auto 0 auto
+   perspective: 1000px
+
+ 
+.carousel 
+   position: absolute
+   width: 100%
+   height: 100%
+   transform-style: preserve-3d
+   animation: rotate360 60s infinite forwards linear
+ 
+.carousel__face 
+   position: absolute
+   width: 300px
+   height: 187px
+   top: 20px
+   left: 10px
+   right: 10px
+   background-size: cover
+   box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5)
+   display: flex
+ 
+ 
+span 
+   margin: auto
+   font-size: 2rem
+ 
+ 
+ 
+.carousel__face:nth-child(1) 
+   background-image: url("https://cf.bstatic.com/xdata/images/hotel/270x200/57014281.jpg?k=838ea852f48ad7021625638000ffdda300f81283b4dd0ae3fac6aac67d6e01a4&o=")
+   transform: rotateY(  0deg) translateZ(430px)
+.carousel__face:nth-child(2) 
+   background-image: url("https://i0.wp.com/elturismoencolombia.com/wp-content/uploads/2016/09/hotel_tequendama_inn_estacion_buenaventura_colombia.jpg?fit=900%2C636&ssl=1")
+   transform: rotateY( 40deg) translateZ(430px)
+.carousel__face:nth-child(3)
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0RSnwXoVQJ4Lxh2tr11Zbn3lgN-qhJJ7eQ&usqp=CAU")
+   transform: rotateY( 80deg) translateZ(430px)
+.carousel__face:nth-child(4) 
+   background-image: url("https://www.directorioamarillascolombia.com/img/img_empresas/12305.jpeg")
+   transform: rotateY(120deg) translateZ(430px)
+.carousel__face:nth-child(5) 
+   background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/92/39/b9/buenaventura-grand-hotel.jpg?w=700&h=-1&s=1")
+   transform: rotateY(160deg) translateZ(430px)
+.carousel__face:nth-child(6) 
+   background-image: url("https://www.es.kayak.com/rimg/kimg/b3/6e/216dcdaf-5ad9af9b-0.jpg?width=1366&height=768&crop=true")
+   transform: rotateY(200deg) translateZ(430px)
+.carousel__face:nth-child(7) 
+   background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1a/1c/57/e7/frente-del-hotel.jpg")
+   transform: rotateY(240deg) translateZ(430px)
+.carousel__face:nth-child(8) 
+   background-image: url("https://q-xx.bstatic.com/xdata/images/hotel/max500/320191624.jpg?k=aeb17132c0de19f8d91c09695e3ae67c9c9c6b85cfb13f9133165c7349fe7ab0&s=100x100")
+   transform: rotateY(280deg) translateZ(430px)
+.carousel__face:nth-child(9) 
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTaf5Bx_N40NUNWvZFPXtHbPD_YKAwJjX9S3Sw2Fykr76sPeIOKMAlQeTQllVp6udWqZg&usqp=CAU")
+   transform: rotateY(320deg) translateZ(430px)
+ 
+ 
+ 
+@keyframes rotate360 
+   from 
+     transform: rotateY(0deg)
+   
+   to 
+     transform: rotateY(-360deg)
+   
+ 
+ 
+
